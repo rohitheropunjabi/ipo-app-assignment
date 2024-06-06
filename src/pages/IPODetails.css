@@ -1,0 +1,167 @@
+body {
+    font-family: 'Sora', sans-serif;
+  }
+  
+  .ipo-details {
+    padding: 20px;
+  }
+  
+  .header-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  
+  .company-logo {
+    padding-left: 15px;
+    width: 70px;
+    height: 70px;
+    border-radius: 45%; 
+  }
+  
+  .company-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto;
+    color: #000435;
+  }
+  
+.back-btn{
+    margin-left: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid #ddd;
+}
+
+ .apply-btn {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Sora', sans-serif;
+    width: 150px;
+  }
+  
+  .download-btn {
+    background-color: white;
+    color: red;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .apply-btn {
+    background-color: #000435;
+    color: white;
+  }
+  
+  .details-section, .timeline-section, .about-section {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    color: #000435;
+  }
+  
+  .details-section h2, .timeline-section h2, .about-section h2 {
+    margin-bottom: 10px;
+    font-size: large;
+  }
+  
+  .details-table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  .details-row {
+    display: contents;
+  }
+
+  .details-row-data{
+    display: contents;
+    text-align: left;
+    font-weight: 600;
+  }
+  
+  .details-row > div {
+    text-align: left;
+    color: grey;
+  }
+  
+  .timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .timeline-icon {
+    font-size: 24px;
+    color: green;
+    margin-bottom: 5px;
+  }
+  
+  .timeline-item span {
+    text-align: center;
+  }
+
+  .timeline-date{
+    color: grey;
+  }
+  
+  .about-section p {
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    .header-section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .company-logo {
+      margin-bottom: 10px;
+    }
+  
+    .download-btn, .apply-btn {
+      display: none;
+    }
+  
+    .details-table {
+      grid-template-columns: 1fr;
+    }
+  
+    .timeline {
+      flex-direction:column;
+    }
+  
+    .timeline-item {
+      margin-bottom: 10px;
+    }
+  }
+
+
+  

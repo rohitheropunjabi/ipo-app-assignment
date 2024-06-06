@@ -1,0 +1,102 @@
+body {
+  font-family: 'Sora', sans-serif;
+}
+
+.ipo-list {
+  padding: 30px;
+}
+
+.ipo-list table {
+  width: 100%;
+  border-collapse: separate;
+  margin-top: 20px;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.ipo-list th, .ipo-list td {
+  border: none;
+  padding: none;
+  text-align: center;
+  color: #000435;
+  font-weight: 600;
+  padding-left: 15px;
+}
+
+.ipo-list th {
+  background-color: rgb(251, 251, 251);
+  color: darkgrey;
+  font-weight: 500;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.ipo-list tr:hover {
+  background-color: #f1f1f1;
+}
+
+.company-logo {
+  width: 70px;
+  height: 70px;
+  margin-right: 8px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.company-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.company-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.company-cell {
+  text-align: left;
+}
+
+.issue-date {
+  color: darkgrey;
+  font-size: 0.9em;
+}
+
+.min-invest-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.min-invest-extra {
+  color: darkgrey;
+  font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+  .ipo-list th, .ipo-list td {
+    font-size: 14px;
+  }
+
+  .ipo-list table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+  }
+
+  .company-logo {
+    width: 20px;
+    height: 20px;
+  }
+}
